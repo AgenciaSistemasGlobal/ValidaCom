@@ -1,0 +1,673 @@
+@font-face {
+      font-family: "Ubuntu-L";
+      src: url("../font/ubuntu/Ubuntu-L.ttf") format("truetype");
+      }
+body{
+	margin: 0px 0px 0px 0px;	
+	font-family: "Ubuntu-L";
+	height: 100%;		
+	/* overflow:hidden; */
+}
+iframe{
+	width: 100%;
+	height: 100%;
+	position: relative;	
+	border-style: none;
+	overflow:scroll; 
+}
+
+/* CABEÇALHO */
+
+/* FIM CONTEÚDO DO CABEÇALHO */
+/* PRINCIPAIS BOTOES NA ADMIN */
+#btn{
+	float: right;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	margin-right: 15px;
+	cursor: pointer;
+}
+#btn:hover{
+	background-color: orange;
+	opacity:0.65;
+	-moz-opacity: 0.65;
+	filter: alpha(opacity=65);
+	-webkit-transition: 0.9s ease-out;
+	-moz-transition: 0.9s ease-out;
+	-o-transition: 0.9s ease-out;
+	transition: 0.9s ease-out;
+}
+.logOut{
+	background-image:url("../img/listIcon.png"); 
+	background-position: 580px 0px;	
+}
+.setting{
+	background-image:url("../img/listIcon.png"); 
+	background-position: 885px -123px;
+}
+.menuIcon{
+	background-image:url("../img/listIcon.png"); 
+	background-position: 805px 405px;
+}
+/* FIM PRINCIPAIS BOTOES NA ADMIN */
+.listaPrdt{		
+	width: 98%;
+	height: 70px;
+	margin-left: 1%;	
+	border-radius: 4px 4px 4px 4px;
+	border-style: solid;
+	border-width: 2px;
+	top: 50px;
+	margin-bottom: 10px;		
+	position: relative;		
+	padding-top: 10px;	
+}
+.gradePrdt{
+	width: 15%;
+	height: 190px;
+	margin-left: 1%;	
+	border-radius: 4px 4px 4px 4px;
+	border-style: solid;
+	border-width: 2px;
+	top: 50px;
+	margin-bottom: 2px;		
+	position: relative;		
+	padding-top: 10px;	
+	float: left;
+}
+
+.vrd{
+	background-color: #C4D7A4;
+	border-color: #D6E9C6;
+	color:#3C763D;
+	font-family: "Calibri";
+}
+.yllw{
+	background-color: #FCF8E3;
+	border-color: #FAEBCC;
+	color:#8A6D3B;
+	font-family: "Calibri";
+}
+.vrm{
+	background-color: #F2DEDE;
+	border-color: #EBCCD1;	
+	color:#A94442;
+	font-family: "Calibri";
+}
+.vrd:hover{
+	box-shadow: 0px 0px 4px rgb(0,0,0);
+	-webkit-transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out;
+	-o-transition: 0.5s ease-out;
+	transition: 0.5s ease-out;
+}
+.yllw:hover{
+	box-shadow: 0px 0px 4px rgb(0,0,0);
+	-webkit-transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out;
+	-o-transition: 0.5s ease-out;
+	transition: 0.5s ease-out;
+}
+.vrm:hover{
+	box-shadow: 0px 0px 4px rgb(0,0,0);
+	-webkit-transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out;
+	-o-transition: 0.5s ease-out;
+	transition: 0.5s ease-out;
+}
+#perfil{
+	display:none;
+	height: 100%;
+	width: 10%;
+	background-color: #F0F0F0;
+	position: fixed;
+	right: 0;
+	z-index: 1;
+	border:solid thin gray;
+}
+#perfil img{
+	position: absolute;
+	top:120px;
+	margin-left: 20%;
+}
+
+#abrfch{
+	cursor: pointer;
+	text-align: center;
+	font-size: 18px;
+	width: 35px;
+	height: 80px;
+	position: fixed;
+	right: 0px;
+	top:50%;
+	background-color: #CBCBCB;
+	border-radius: 5px 0px 0px 5px;
+	background-image:url("../img/listIcon.png"); 
+	background-position: 112px 430px; 	
+	z-index: 1;
+	border-left:solid thin gray;
+	border-top:solid thin gray;
+	border-bottom:solid thin gray;
+}
+
+#abrfch:hover{
+	width: 38px;	
+	-webkit-transition: 0.4s ease-out;
+	-moz-transition: 0.4s ease-out;
+	-o-transition: 0.4s ease-out;
+	transition: 0.4s ease-out;
+}
+.iconsLista{
+	width: auto;
+	height: 20px;	
+	float: right;	
+	margin-top: 20px;
+	margin-right: 10px;
+}
+.iconsLista:hover{
+	text-shadow:5px 5px 5px black;
+	-webkit-transition: 0.4s ease-out;
+	-moz-transition: 0.4s ease-out;
+	-o-transition: 0.4s ease-out;
+	transition: 0.4s ease-out;	
+}
+
+.gradePrdt .iconsLista{
+	width: auto;
+	height: 20px;	
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+
+	-webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+.gradePrdt .iconsLista:hover{
+	text-shadow:5px 5px 5px black;
+	-webkit-transition: 0.4s ease-out;
+	-moz-transition: 0.4s ease-out;
+	-o-transition: 0.4s ease-out;
+	transition: 0.4s ease-out;	
+}
+
+#texto{
+	float: left;
+}
+.listaPrdt #dele{		
+	cursor: pointer;	
+}
+.listaPrdt #edit{	
+	cursor: pointer;
+}
+.listaPrdt #visu{	
+	cursor: pointer;
+}
+
+
+
+.gradePrdt #dele{		
+	cursor: pointer;	
+}
+.gradePrdt #edit{	
+	cursor: pointer;
+	right: 30px;
+}
+.gradePrdt #visu{	
+	cursor: pointer;
+	right: 60px;
+}
+
+.listaPrdt .text{
+	padding: 15px;
+	font-size: 24px;
+	font-weight: bold;	
+}
+.listaPrdt .textDesc{
+	padding: 15px;
+	font-size: 14px;		
+}
+
+
+
+.gradePrdt .text{
+	padding: 15px;
+	font-size: 24px;
+	font-weight: bold;	
+}
+.gradePrdt .textDesc{
+	padding: 15px;
+	font-size: 14px;		
+}
+
+
+
+#englobaLista{
+	width: 100%;
+	position: relative;	
+}
+#lista{
+	width: 60px;
+	height: 30px;	
+	color: gray;
+	background-color: #F0F0F0;
+	text-align: center;
+	cursor: pointer;
+	float: right;	
+	margin-right:10px;
+	padding-top: 5px;
+	border: solid thin #C0C0C0;
+}
+#lista:hover{
+	color: #404040;
+}
+.active{
+	background-color: #000;
+}
+#grade{
+	width: 60px;
+	height: 30px;
+	color: gray;
+	background-color: #F0F0F0;
+	text-align: center;
+	cursor: pointer;
+	float: right;
+	margin-right: 	10px;
+	padding-top: 5px;
+	border: solid thin #C0C0C0;
+}
+#grade:hover{
+	color: #404040;
+}
+#grade .active{
+	background-color: #000;
+}
+#englobaCadastro{
+	padding: 10px;
+}
+#formPrdt input{
+	padding: 8px 10px 8px 10px;		
+	border:solid thin #A0A0A0;
+	border-radius: 1px;
+	margin-top: 2px;	
+}
+#formPrdt input:focus{
+	border-color: orangered;
+	outline-color:orangered;	
+	-webkit-transition: 0.4s ease-out;
+	-moz-transition: 0.4s ease-out;
+	-o-transition: 0.4s ease-out;
+	transition: 0.4s ease-out;
+
+}
+.requered{ 
+	color: #FFF;
+	font-weight: bold;
+	font-size: 12px;
+	cursor: pointer;
+	width: 25px;
+	height: 10px;		
+	background-color: #C0C0C0;			
+	padding: 2px 2px 3px 2px;
+	text-align: center;
+	
+}
+.requered:hover{
+	box-shadow: 0px 0px 1px rgb(0,0,0);
+	-webkit-transition: 0.4s ease-out;
+	-moz-transition: 0.4s ease-out;
+	-o-transition: 0.4s ease-out;
+	transition: 0.4s ease-out;	
+}
+.bottomOr{	
+	height: 20px;
+	padding:7px;
+	width: 100px;		
+	color: white;
+	border-bottom: solid 4px gray;
+	text-align: center;
+	cursor: pointer;	
+	margin-right: 5px;
+	float: right;
+}
+
+.bottomOrB{	
+	height: 20px;
+	padding:7px;
+	width: 250px;		
+	color: white;
+	border-bottom: solid 4px gray;
+	text-align: center;
+	cursor: pointer;	
+	margin-right: 5px;
+	float: left;
+}
+
+
+.bottomOr:hover{
+	background: orangered;
+	-webkit-transition: 0.9s ease-out;
+	-moz-transition: 0.9s ease-out;
+	-o-transition: 0.9s ease-out;
+	transition: 0.9s ease-out;	
+}
+
+.bottomOrB:hover{
+	background: rgb(128,181,50);
+	-webkit-transition: 0.9s ease-out;
+	-moz-transition: 0.9s ease-out;
+	-o-transition: 0.9s ease-out;
+	transition: 0.9s ease-out;	
+}
+
+.bottomOr:active{
+	background:#CC0000;
+	-webkit-transition: 0.4s ease-out;
+	-moz-transition: 0.4s ease-out;
+	-o-transition: 0.4s ease-out;
+}
+
+.bottomOrB:active{
+	background: rgb(176,219,50);	
+	-webkit-transition: 0.4s ease-out;
+	-moz-transition: 0.4s ease-out;
+	-o-transition: 0.4s ease-out;
+}
+
+.bottomOr .fa-angle-double-right{
+	margin-left:10px;
+	font-size: 20px;
+	float: right;
+	margin-top: 0px;
+}
+
+.bottomOrB .fa-angle-double-right{
+	margin-left:10px;
+	font-size: 20px;
+	float: right;
+	margin-top: 0px;
+}
+.bottomOrB .fa-check .checkFinal{
+	float: left;
+    position: relative;
+    left: -50%;
+}
+
+.bottomOr{
+	background-color: orange;	
+}
+
+.bottomOrB{
+	background-color: rgb(154, 205, 50);	
+}
+
+#green{
+	background-color: green;
+}
+#red{
+	background-color: red;
+}
+#blue{
+	background-color: blue;
+}
+.lblPrdt{	
+	font-size: 16px;
+	color:orange;	
+}
+#ladoEsquerdoPrdt{	
+	margin-left: 25%;
+	margin-top: 25px;
+}
+
+#lblTitulo{
+	float: left;
+	font-size: 28px;
+	font-weight: bold;
+	color: gray;
+	border-bottom: solid 3px gray;
+	padding-right: 155px;	
+	padding-bottom: 10px;
+}
+
+#vldt{
+	font-size: 24px;
+	font-weight: bold;
+}
+#dtValidade_prdt input{
+	border-color: orange;
+}
+.verticalLine{	
+	margin-top: 5px;
+	margin-left: 20px;
+	width: 10px;
+	height: 40px;
+	background-color:#CC0000;
+	float: left;	
+}
+/* #dtValidade_prdt:focus{
+	border-color: orangered;
+	outline-color:orangered;
+} */
+#bgImg{
+	width: 99%;
+	height: 50px;
+	background-image: url('../img/supermarket-main3.jpg');
+	position: absolute;
+	background-position: center;
+	background-attachment: fixed; 
+	opacity: .8;
+	border-radius: 4px;
+}
+#bgImg label{
+	color: white;
+	font-size: 26px;
+	margin-left:10px;
+	float: left;
+	margin-top: 5.5px;
+}
+#bgImg2{
+	width: 99%;
+	height: 80%;
+	background-image: url('../img/supermarket-main3.jpg');	
+	position: absolute;
+	top: 200px;
+	background-position: center;
+	background-attachment: fixed;
+}
+.inptPrdt{
+	padding: 7px 15px 7px 15px;
+	border-radius: 2px;
+	border:solid thin #B0B0B0;
+	margin-right: 10px;
+	margin-bottom: 10px;	
+}
+#caixaPrdt{
+	background-color: #D0D0D0;
+	width: 130px;
+	height: 180px;			
+	border-radius: 5px;	
+	margin-left: 15px;
+	float: left;
+}
+#titulo{
+	color: #000;
+	font-size: 17px;
+	background-color:gray;
+	position: absolute;
+	width: 130px;
+	text-align: center;
+	/* font-weight: bold; */	
+	color: white;
+	border-radius: 5px 5px 0px 0px;
+}
+#caixaPrdt #desc{
+	color: gray;
+	font-size: 14px;
+	text-align: left;
+}
+#caixaPrdt img{
+	margin-left: 11%;
+	margin-top: 5%;
+}
+#showPrdt{
+	position: absolute;
+	right: 0px;
+	top: 55px;	
+	height: 27em;
+	width:57%;
+	background-color: red;
+	border-left: solid thin gray;
+}
+.umtodo{
+	margin-left: 50px;
+}
+#form_footer{
+	width: 97.5%;
+	height: 80px;
+	background-color: #F0F0F0;
+	padding:10px;
+}
+.passosClas{
+	width: 60px;
+	height: 45px;
+	border-radius: 60px;
+	background-color: #F0F0F0;
+	text-align: center;
+	font-weight: bold;
+	color: gray;
+	float: left;
+	margin-right:15px;
+	font-size: 20px;
+	padding-top: 15px;
+	
+}
+#molduraImg{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	overflow: hidden;	
+	float: left;
+}
+.lblpasso{
+	float: left;
+	margin-right: 90px;
+	margin-top: 17px;
+	font-size: 18px;
+}
+#passos .active{
+	background-color: #F7C62A;
+	color: white;
+	cursor:pointer; 
+}
+#passos .japassou{
+	background-color: rgb(154, 205, 50);
+	color: white;	
+}
+#passos .active:hover{
+	box-shadow: 0px 0px 5px rgb(0,0,0);
+	-webkit-transition: 0.4s ease-out;
+	-moz-transition: 0.4s ease-out;
+	-o-transition: 0.4s ease-out;
+}
+#passos{
+	padding: 10px;
+}
+#progressbar{
+	float: left;
+	width: 97.5%;
+	height: 20px;
+	background-color: #F0F0F0;
+	margin-top: 25px;	
+	overflow: hidden;
+}
+#progress{
+	background-color: #F7C62A;
+	height: 20px;	
+	
+}
+.configMenus{
+	width: 98.8%;
+	height:auto;
+	border: solid thin orange;	
+}
+#topoOP{
+	width: 100%;
+	height: 35px;
+	background-color: orange;
+	color: white;	
+}
+#topoOP .fa-angle-down{
+	width: 20px;
+	height: 25px;
+	padding: 5px;
+	text-align: center;	
+}
+#topoOP .fa-angle-down:hover{
+	background-color: darkorange;
+	border-left-style: none;
+}
+
+
+input[name="green_prazo"]{
+	border-right: solid thin yellowgreen;
+	border-top:  solid thin yellowgreen;
+	border-bottom:  solid thin yellowgreen;	
+}
+input[name="green_prazo"]:focus{
+	outline-color: yellowgreen;
+}
+
+input[name="gold_prazo"]{
+	border-right: solid thin gold;
+	border-top:  solid thin gold;
+	border-bottom:  solid thin gold;
+}
+input[name="gold_prazo"]:focus{
+	outline-color: gold;
+}
+
+input[name="red_prazo"]{
+	border-right: solid thin #EB3E35;
+	border-top:  solid thin #EB3E35;
+	border-bottom:  solid thin #EB3E35;	
+}
+input[name="red_prazo"]:focus{
+	outline-color: #EB3E35;
+}
+
+input[id="inpPrazo"]{
+	border-left: none;
+	padding: 5px;	
+}
+#testedaporra{
+	background-color: white;
+	width: 395px;
+	height: 95px;	
+	font-size: 12px;	
+	color:gray;	
+	margin-left: 100px;
+	border: solid 0.5px #D0D0D0;	
+	position: absolute;
+	top: 0px;
+	right: 4px;
+	box-shadow: 5px 5px 5px rgb(240, 240, 240);
+	padding: 5px
+}
+/* #testedaporra2{
+	box-shadow: 0px 0px 5px rgb(0,0,0);
+	-ms-transform: rotate(50deg);
+	-webkit-transform: rotate(50deg);
+	-moz-transform: rotate(50deg);
+	-o-transform: rotate(50deg);
+	transform: rotate(50deg);
+	margin-left: -10px;
+	z-index: 1;
+	margin-top: 10px;
+	border: solid 0.5px;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+} */
+

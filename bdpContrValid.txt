@@ -1,0 +1,47 @@
+TB_PRODUTO
+	** id_Produto
+	** id_Fornecedor
+	* codigo
+	* descricao
+	* fornecedor
+	* qntd_Entrada
+	* prateleira
+	* corredor
+	* categoria
+	* preco_Unitario
+	* lote
+	* dt_Validade
+	* dt_fabricacao
+
+TB_CONTROLE
+	** id_controle
+	** id_produto
+	* categoria
+	* Categoria_Validade
+	* qtd_produtos
+
+TB_FUNCIONARIO
+	** id_funcionario
+	** id_usuario
+	* nome
+	* cargo
+	* setor
+	* ramal
+	* responsavel_prateleira
+
+TB_USUARIO
+	** id_user
+	** id_func
+	* email
+	* login
+	* senha
+	
+TB_EMPRESA
+	** id_empresa
+	* empresa
+	* fone
+	* cnpj
+	* numero_func
+	* plano
+
+
